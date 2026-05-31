@@ -23,3 +23,6 @@ st.subheader("Summary Metrics")
 st.write("Total Sales:", df['Sales'].sum())
 st.write("Average Sales:", df['Sales'].mean())
 st.write("Maximum Sales:", df['Sales'].max())
+import streamlit as st
+
+st.write(df.columns)

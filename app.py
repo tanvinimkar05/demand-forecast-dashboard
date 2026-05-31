@@ -26,3 +26,12 @@ st.write("Maximum Sales:", df['Sales'].max())
 import streamlit as st
 
 st.write(df.columns)
+import streamlit as st
+import pandas as pd
+
+df = pd.read_csv("sales_sample.csv")  # or your file name
+
+st.write("Column Names:")
+st.write(list(df.columns))
+
+st.dataframe(df.head())

@@ -12,9 +12,11 @@ st.dataframe(df.head())
 
 st.subheader("Sales Trend")
 
-fig, ax = plt.subplots()
-ax.plot(df['Date'], df['Sales'])
-plt.xticks(rotation=45)
+fig, ax = plt.subplots(figsize=(10,5))
+ax.plot(df['date'], df['quantity'])
+ax.set_title('Demand Trend')
+ax.set_xlabel('Date')
+ax.set_ylabel('Quantity Sold')
 
 st.pyplot(fig)
 

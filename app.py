@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 st.title("Demand Forecasting Dashboard")
 
-df = pd.read_csv("sales.csv")
+df = pd.read_csv("sales_sample.csv")
 
 st.subheader("Dataset Preview")
 st.dataframe(df.head())

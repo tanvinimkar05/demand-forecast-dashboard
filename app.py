@@ -22,9 +22,9 @@ st.pyplot(fig)
 
 st.subheader("Summary Metrics")
 
-st.write("Total Sales:", df['Sales'].sum())
-st.write("Average Sales:", df['Sales'].mean())
-st.write("Maximum Sales:", df['Sales'].max())
+st.write("Total Quantity Sold:", df['quantity'].sum())
+st.write("Average Quantity Sold:", df['quantity'].mean())
+st.write("Maximum Quantity Sold:", df['quantity'].max())
 import streamlit as st
 
 st.write(df.columns)
